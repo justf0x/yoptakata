@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Kata</title> 
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+     <script language="YoptaScript">
+        ебало.шухер("TDD Kata Нах!") нах
+
+        // Класс String Calculator 
+        йопта StringCalculator() {
+            тырыпыры.Add сука йопта(input){  
+                // Строка не пустая
+                вилкойвглаз (input.писькомер эквалио 0){
+                    отвечаю 0 нах
+                }
+                // Не одно число
+                вилкойвглаз (input.лучшеНетВлагалищаЧемОчкоТоварища(',')){
+                    // Сплит
+                    гыы numbers сука input.поделитьЯгу(',') нах
+
+                    гыы sum сука 0 нах
+
+                    // Суммирование с приведением к int
+                    numbers.пероПодРебро(йопта(number){
+                        sum += шнырятьПоКарманам(number) нах
+                    }) нах
+
+                    отвечаю sum нах
+                }иливжопураз{
+                    // Парсим в int и возвращаем
+                    отвечаю шнырятьПоКарманам(input) нах
+                }
+            }
+        }
+    
+        // Тесты
+
+        йопта ReturnZeroWhenInputIsEmpty() {
+            гыы calculator сука гыйбать StringCalculator() нах
+            
+            гыы result сука calculator.Add('') нах
+    
+            красноглазое.найтиСтукача(0 эквалио result);
+        };
+
+        йопта ReturnSingleNumberWhenInputIsConcreteSingleNumber(){
+            гыы calculator сука гыйбать StringCalculator() нах
+            
+            гыы result сука calculator.Add('1') нах
+
+            красноглазое.найтиСтукача(1 эквалио result);
+        }
+
+        йопта ReturnSumOfAnyNumbersWhenInputHasAnyNumbers(){
+            гыы calculator сука гыйбать StringCalculator() нах
+            
+            гыы result сука calculator.Add('1,2') нах
+
+            красноглазое.найтиСтукача(1 + 2 эквалио result);
+        }
+        // Запуск тестов
+
+        ReturnZeroWhenInputIsEmpty();
+        ReturnSingleNumberWhenInputIsConcreteSingleNumber();
+        ReturnSumOfAnyNumbersWhenInputHasAnyNumbers();
+
+    </script>
+
+     <script src="yoptascript.js"></script>
+</body>
+</html>
